@@ -13,4 +13,67 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  font-variation-settings: weight(var(--main-font-weight));
+  background-image: repeating-linear-gradient(
+    to right,
+    #d3d3d3 0px 2px,
+    transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0px 2px ,
+    transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7,
+      #1a1a1a
+    );
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  margin: 100px auto;
+  inline-size: var(--main-content-inline-size);
+  block-size: 368px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+.header__maintitle {
+  font-size: var(--header-maintitle-font-size);
+}
+
+.header__subtitile {
+  font-size: var(--header-subtitle-font-size);
+}
+
+.content {
+  margin: 0 auto;
+  inline-size: var(--main-content-inline-size);
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+}
+
+.card__image {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  inline-size: 100%;
+  block-size: 100%;
 }

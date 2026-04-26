@@ -9,11 +9,11 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 
-h1, button, ::before {
-  font-family: 'PressStart2P-Regular', sans-serif;
+h1, h2, button, ::before {
+  font-family: var(--accent-font), sans-serif;
 }
 
 h1,
