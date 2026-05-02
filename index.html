@@ -27,9 +27,11 @@
           <div class="image__container">
             <span class="card__label">сомнения</span>
             <img 
-              class="card__image" 
-              src="./images/mopsik.jpg" 
-              alt="">
+              class="card__image mops"
+              src="./images/mopsik.jpg"
+              loading="lazy"
+              alt="Щеночек-мопс растерянно смотрит на вас"
+              >
           </div>
           <div class="card__text">
             <p class="card__p">
@@ -72,9 +74,11 @@
           <div class="image__container">
             <span class="card__label">открытие</span>
             <img 
-              class="card__image" 
-              src="./images/door-handle.jpg" 
-              alt="">
+              class="card__image door-handle"
+              src="./images/door-handle.jpg"
+              loading="lazy"
+              alt="Странная дверная ручка"
+              >
           </div>
           <div class="card__text">
             <p class="card__p">
@@ -118,9 +122,11 @@
           <div class="image__container">
             <span class="card__label">преодоление</span>
             <img 
-              class="card__image" 
-              src="./images/bug).jpg" 
-              alt="">
+              class="card__image bug"
+              src="./images/bug.jpg"
+              loading="lazy"
+              alt="Божья коровка посреди травинок"
+              >
           </div>
           <div class="card__text">
             <p class="card__p">
@@ -162,9 +168,11 @@
           <div class="image__container">
             <span class="card__label">дисциплина</span>
             <img 
-              class="card__image" 
-              src="./images/pencil.jpg" 
-              alt="">
+              class="card__image pencil"
+              src="./images/pencil.jpg"
+              loading="lazy"
+              alt="Свежезаточенный карандаш, рядом ластик и точилка"
+              >
           </div>
           <div class="card__text">
             <p class="card__p">
@@ -207,9 +215,11 @@
           <div class="image__container">
             <span class="card__label">стремление</span>
             <img 
-              class="card__image" 
-              src="./images/cookie.jpg" 
-              alt="">
+              class="card__image cookie"
+              src="./images/cookie.jpg"
+              loading="lazy"
+              alt="Печенье с предсказанием на тёмном фоне"
+              >
           </div>
           <div class="card__text">
             <p class="card__p">
@@ -253,9 +263,11 @@
           <div class="image__container">
             <span class="card__label">вариативность</span>
             <img 
-              class="card__image" 
-              src="./images/clocks.jpg" 
-              alt="">
+              class="card__image clocks"
+              src="./images/clocks.jpg"
+              loading="lazy"
+              alt="Часы посреди улицы, запечатлённые в вечернее время"
+              >
           </div>
           <div class="card__text">
             <p class="card__p">
@@ -297,9 +309,11 @@
           <div class="image__container">
             <span class="card__label">баланс</span>
             <img 
-              class="card__image" 
-              src="./images/new-life.jpg" 
-              alt="">
+              class="card__image branch"
+              src="./images/new-life.jpg"
+              loading="lazy"
+              alt="Молодая веточка, растущая из ствола взрослого дерева"
+              >
           </div>
           <div class="card__text">
             <p class="card__p">
@@ -342,9 +356,11 @@
           <div class="image__container">
             <span class="card__label">конец модуля!</span>
             <img 
-              class="card__image" 
-              src="./images/sakura.jpg" 
-              alt="">
+              class="card__image sakura"
+              src="./images/sakura.jpg"
+              loading="lazy"
+              alt="Цветущая сакура, приветливо тянущая ветви к солнцу"
+              >
           </div>
           <div class="card__text">
             <p class="card__p">
@@ -385,15 +401,50 @@
       </ul>
     </main>
     <footer class="footer">
-      <button class="save__button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
-          <use href="floppydisc.svg#floppydisc"></use>
-        </svg> 
+      <button 
+      class="save__button"
+      type="button" 
+      onclick="window['dialog-id'].showModal()" 
+      aria-controls="dialog-id"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 21 21"
+          >
+          <use href="./svg/floppydisc-size-S.svg#floppydisc"></use>
+        </svg>
         <span class="button__text">
           Сохранить на память
         </span>
       </button>
     </footer>
+    <dialog
+    class="dialog"
+    id="dialog-id"
+    >
+      <div class="notification">
+        <svg
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 21 21"
+          width="39"
+          height="39"
+          >
+            <use href="./svg/floppydisc-size-S.svg#floppydisc"></use>
+        </svg>
+        <span class="dialog__text">
+          Вставьте дискету, чтобы продолжить
+        </span>
+      </div>
+      <button
+        class="close__button"
+        type="button" 
+        onclick="window['dialog-id'].close()"
+      >
+        <span class="button__text">
+          OK
+        </span>
+    </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

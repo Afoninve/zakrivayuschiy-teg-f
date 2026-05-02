@@ -5,8 +5,38 @@
   --main-headings-font-weight: 715;
   --accent-font: 'PressStart2P-Regular';
 
-  --header-maintitle-font-size: 65px;
-  --header-subtitle-font-size: 23px;
+  --header-block-size: 368px;
+  --header-margin: 100px auto;
+  --header-maintitle-font-size: clamp(3.75rem, 3.5653rem + 2.2388vw, 4.125rem);
+  --header-subtitle-font-size: clamp(1.25rem, 1.1269rem + 1.4925vw, 1.5rem);
 
   --stroke-color: #fff;
+
+  --save-button-padding: 50px 0 100px;
+  --save-button-inline-size: 335px;
+  --save-button-block-size: 55px;
+  --save-button-flex-direction: row;
+  --save-floppydisc-size: 21px;
+  
+  --dialog-padding: 30px;
+}
+
+@media (width <= 376px) {
+  :root {
+    --main-content-inline-size: clamp(320px, 375px, 425px);
+
+    --header-block-size: 327px;
+    --header-margin: 100px auto 50px;
+    --header-maintitle-font-size: clamp(2.875rem, 2.7519rem + 1.4925vw, 3.125rem);
+    --header-subtitle-font-size: clamp(0.6875rem, 0.5644rem + 1.4925vw, 0.9375rem);
+
+    --save-button-padding: 50px 0 150px;
+    --save-button-inline-size: 306px;
+    --save-button-block-size: 84px;
+    --save-button-flex-direction: column;
+    --save-floppydisc-size: 28px;
+
+    --dialog-padding: 30px 40px;
+  }
+  
 }

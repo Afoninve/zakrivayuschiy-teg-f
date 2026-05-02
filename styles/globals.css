@@ -12,7 +12,11 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, button, .card__label {
+h1,
+h2,
+button,
+.card__label,
+.dialog__text {
   font-family: var(--accent-font), sans-serif;
 }
 
