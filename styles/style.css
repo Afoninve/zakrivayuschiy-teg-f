@@ -34,6 +34,31 @@
   background-attachment: fixed;
 }
 
+.button {
+  background-color: #fff;
+  border: 2px solid #000;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  scale: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.button::before:hover {
+  scale: 1;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 #000;
+}
+
 .header {
   margin: var(--header-margin);
   inline-size: var(--main-content-inline-size);
@@ -135,9 +160,7 @@
 .card__like-button {
   min-inline-size: 130px;
   min-block-size: 38px;
-  border: 2px solid #000;
   align-self: flex-end;
-  background-color: #fff;
 }
 
 .button__text {
@@ -162,8 +185,6 @@
   gap: 8px;
   min-inline-size: var(--save-button-inline-size);
   min-block-size: var(--save-button-block-size);
-  background-color: #fff;
-  border: 2px solid #000;
 }
 
 .save__button svg {
@@ -189,22 +210,18 @@
 
 .notification svg {
   align-self: center;
-  width:39px;
-  height: 39px; не получатся
 }
 
 .dialog__text {
   font-size: 14px;
   text-transform: uppercase;
   display: block;
-  max-inline-size: 234px;
+  max-inline-size: 196px;
   line-height: 1.5;
 }
 
 .close__button {
   padding: 9px 0;
-  background-color: #fff;
-  border: 2px solid #000;
 }
 
 /* Фильтры для изображений */
