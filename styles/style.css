@@ -14,7 +14,7 @@
   min-inline-size: var(--main-content-inline-size);
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  font-variation-settings: weight(var(--main-font-weight));
+  font-variation-settings: "wght" var(--main-font-weight);
   background-image: repeating-linear-gradient(
     to right,
     #d3d3d3 0px 2px,
@@ -115,6 +115,7 @@
 .card__heading {
   padding: 5px 10px;
   font-size: var(--cards-main-font-size);
+  font-variation-settings: "wght" var(--main-headings-font-weight);
 }
 
 .card__text {
