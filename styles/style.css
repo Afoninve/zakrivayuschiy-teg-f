@@ -196,18 +196,16 @@
   align-items: center;
   justify-self: center;
   margin: var(--save-button-margin);
-  padding: 15px 20px;
+  padding: var(--save-button-padding);
 }
 
 .dialog[open] {
-  padding: 0;
+  padding: var(--dialog-padding);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  inline-size: var(--dialog-inline-size);
-  block-size: var(--dialog-block-size);
 }
 
 .dialog::backdrop {
@@ -236,14 +234,14 @@
 .dialog__text {
   font-size: var(--dialog-font-size);
   text-transform: uppercase;
-  display: block;
-  max-inline-size: 196px;
+  display: inline-block;
+  max-inline-size: var(--dialog-text-width);
   line-height: 1.5;
 }
 
 .close__button {
-  padding: 8px 0;
-  inline-size: var(--close-button-inline-size);
+  padding: var(--close-button-padding);
+  inlie-size: var(--close-button-inline-size);
 }
 
 /* Фильтры для изображений */

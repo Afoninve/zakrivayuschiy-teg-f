@@ -16,15 +16,15 @@
   --accent-color: black;
 
   --button-font-size: clamp(0.75rem, 0.6884rem + 0.7463vw, 0.875rem);
+  --save-button-padding: 15.5px 18.5px;
   --save-button-margin: 50px auto 100px;
   --save-button-flex-direction: row;
   --save-icon-size: 21px;
 
-  --dialog-inline-size: 353px;
-  --dialog-block-size: 191px;
   --dialog-font-size: clamp(0.75rem, 0.6884rem + 0.7463vw, 0.875rem);
-  --dialog-padding: 30px;
-  --close-button-inline-size: 293px;
+  --dialog-padding: 27.5px;
+  --dialog-text-width: 234px;
+  --close-button-padding: 8px 131px;
 
   --animation-fill-color: #ff0000;
   --main-body-color: transparent;
@@ -40,13 +40,13 @@
     --header-label-font-size: clamp(2.875rem, 2.7519rem + 1.4925vw, 3.125rem);
     --header-maintitle-font-size: clamp(0.6875rem, 0.5644rem + 1.4925vw, 0.9375rem);
 
-    --save-button-padding: 50px 0 150px;
+    --save-button-padding: 15.5px 20.2px;
     --save-button-margin: 50px auto 152px;
     --save-button-flex-direction: column;
     --save-icon-size: 28px;
 
-    --dialog-padding: 30px 40px;
-    --dialog-inline-size: 341px;
-    --close-button-inline-size: 261px;
+    --dialog-padding: 28px 40px;
+    --dialog-text-width: 194px;
+    --close-button-padding: 8px 115px;
   }
 }
