@@ -1,14 +1,14 @@
 :root {
   --main-content-inline-size: clamp(600px, 700px, 900px);
   --main-font: 'Inter-Variable';
-  --main-font-weight: 400;
-  --main-headings-font-weight: 785;
-  --accent-font: 'PressStart2P-Regular';
+  --main-font-weight: 410;
+  --main-headings-font-weight: 715;
+  --accent-font: 'PressStart2P';
 
-  --header-block-size: 368px;
+  --header-padding: 130px 0;
   --header-margin: 100px auto;
-  --header-maintitle-font-size: clamp(3.75rem, 3.5653rem + 2.2388vw, 4.125rem);
-  --header-subtitle-font-size: clamp(1.25rem, 1.1269rem + 1.4925vw, 1.5rem);
+  --header-label-font-size: clamp(3.75rem, 3.5961rem + 1.8657vw, 4.0625rem);
+  --header-maintitle-font-size: clamp(1.25rem, 1.1576rem + 1.1194vw, 1.4375rem);
   --cards-main-font-size: clamp(1rem, 0.9384rem + 0.7463vw, 1.125rem);
 
   --main-background-color: #fff;
@@ -16,11 +16,9 @@
   --accent-color: black;
 
   --button-font-size: clamp(0.75rem, 0.6884rem + 0.7463vw, 0.875rem);
-  --save-button-padding: 50px 0 100px;
-  --save-button-inline-size: 335px;
-  --save-button-block-size: 55px;
+  --save-button-margin: 50px auto 100px;
   --save-button-flex-direction: row;
-  --save-floppydisc-size: 21px;
+  --save-icon-size: 21px;
 
   --dialog-font-size: clamp(0.75rem, 0.6884rem + 0.7463vw, 0.875rem);
   --dialog-padding: 30px;
@@ -34,16 +32,15 @@
   :root {
     --main-content-inline-size: clamp(320px, 375px, 425px);
 
-    --header-block-size: 327px;
+    --header-padding: 122px 0;
     --header-margin: 100px auto 50px;
     --header-maintitle-font-size: clamp(2.875rem, 2.7519rem + 1.4925vw, 3.125rem);
     --header-subtitle-font-size: clamp(0.6875rem, 0.5644rem + 1.4925vw, 0.9375rem);
 
     --save-button-padding: 50px 0 150px;
-    --save-button-inline-size: 306px;
-    --save-button-block-size: 84px;
+    --save-button-margin: 50px auto 152px;
     --save-button-flex-direction: column;
-    --save-floppydisc-size: 28px;
+    --save-icon-size: 28px;
 
     --dialog-padding: 30px 40px;
   }

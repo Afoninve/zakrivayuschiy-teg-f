@@ -13,9 +13,9 @@ body {
 }
 
 h1,
-h2,
 button,
 .card__label,
+.header__label,
 .dialog__text {
   font-family: var(--accent-font), sans-serif;
 }
