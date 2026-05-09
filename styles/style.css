@@ -11,7 +11,7 @@
 */
 
 .page {
-  min-inline-size: var(--main-content-inline-size);
+  inline-size: var(--main-content-inline-size);
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--main-font-weight);
@@ -77,7 +77,6 @@
 .header {
   margin: var(--header-margin);
   padding: var(--header-padding);
-  inline-size: var(--main-content-inline-size);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -98,7 +97,6 @@
 
 .content {
   margin: 0 auto;
-  inline-size: var(--main-content-inline-size);
   display: flex;
   flex-direction: column;
 }
@@ -241,7 +239,6 @@
 
 .close__button {
   padding: var(--close-button-padding);
-  inlie-size: var(--close-button-inline-size);
 }
 
 /* Фильтры для изображений */
@@ -275,4 +272,16 @@
 
 .contr_bl_graysc_inv {
   filter: contrast(110%) blur(1px) grayscale(20%) invert(0.2);
+}
+
+@meia (width <= 375px) {
+  .page {
+    margin: 0;
+    min-inline-size: 300px;
+    max-inline-size: 375px;
+  }
+}
+
+* {
+  outline: 1px solid red;
 }
