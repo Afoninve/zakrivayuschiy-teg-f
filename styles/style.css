@@ -274,14 +274,10 @@
   filter: contrast(110%) blur(1px) grayscale(20%) invert(0.2);
 }
 
-@meia (width <= 375px) {
-  .page {
-    margin: 0;
-    min-inline-size: 300px;
-    max-inline-size: 375px;
-  }
-}
+/*
 
 * {
   outline: 1px solid red;
 }
+  
+*/
