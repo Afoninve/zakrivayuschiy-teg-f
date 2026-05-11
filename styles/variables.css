@@ -45,7 +45,7 @@
     --save-button-flex-direction: column;
     --save-icon-size: 28px;
 
-    --dialog-padding: 28px 8px;
+    --dialog-padding: 28px 34px;
     --dialog-text-width: 194px;
     --close-button-padding: 8px 115px;
   }
@@ -54,7 +54,13 @@
 @media (768px > width >= 376px) {
   :root {
   --main-content-inline-size: clamp(300px, 100vw, 500px);
-  --header-label-font-size: 60px;
+  --header-label-font-size: 50px;
+  }
+}
+
+@media (376px > width >= 320px) {
+  :root {
+    --header-label-font-size: 45px; 
   }
 }
 
@@ -62,5 +68,6 @@
   :root {
   --main-content-inline-size: clamp(250px, 100vw, 320px);
   --header-label-font-size: clamp(1.875rem, 1.444rem + 5.2239vw, 2.75rem);
+  --dialog-padding: 28px 8px;
   }
 }
